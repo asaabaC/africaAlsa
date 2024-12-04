@@ -1,0 +1,113 @@
+/* slideimage.css */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set a fixed height for the slider container */
+    overflow: hidden;
+    background-color: white; /* White background for the container */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Base slide styles */
+.slide {
+    min-width: 100%;
+    position: relative;
+    opacity: 0; /* Start hidden */
+}
+
+/* Set a fixed height for the images */
+.slide img {
+    width: 100%;
+    height: 500px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+/* Adjust caption styles */
+.caption {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    right: 20px; /* Align to the right */
+    transform: translateY(-50%); /* Adjust to perfectly center the text */
+    color: white; /* Text color for better contrast */
+    text-align: right; /* Align text to the right */
+    background-color:  turquoise; /* Semi-transparent background in light teal color */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.heading {
+    font-size: 40px; /* Increased heading size */
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+.subheading {
+    font-size: 30px; /* Increased subheading size */
+    margin: 5px 0 0; /* Top margin only for spacing */
+}
+
+/* Keyframes for fade and slide animations */
+@keyframes fade-slide-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(100%); /* Start from the right */
+    }
+    20% {
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* Move to the original position */
+    }
+    80% {
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        opacity: 0; /* Fade out */
+        transform: translateX(-100%); /* Move out to the left */
+    }
+}
+
+/* Apply the animation to each slide */
+.slide {
+    animation: fade-slide-animation 10s infinite; /* Use the combined fade and slide animation */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 36px; /* Adjust heading size for medium screens */
+    }
+
+    .subheading {
+        font-size: 28px; /* Adjust subheading size for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 32px; /* Further adjust heading size for smaller screens */
+    }
+
+    .subheading {
+        font-size: 24px; /* Further adjust subheading size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 28px; /* Adjust heading size for mobile screens */
+    }
+
+    .subheading {
+        font-size: 20px; /* Adjust subheading size for mobile screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .caption {
+        right: 10px; /* Adjust caption position for very small screens */
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+}

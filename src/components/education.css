@@ -1,0 +1,79 @@
+.education-container {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc; /* Slightly lighter background */
+  padding: 50px; /* Increase padding for better spacing */
+  max-width: 1100px; /* Increase max width to accommodate larger images */
+  margin: 20px auto; /* Add some top margin for breathing room */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better depth */
+  border-radius: 10px; /* Smoother, slightly larger rounded corners */
+  transition: transform 0.3s ease; /* Add a smooth hover effect */
+}
+
+.education-container:hover {
+  transform: scale(1.02); /* Slight scaling on hover */
+}
+
+.education-title {
+  text-align: center;
+  font-size: 36px; /* Increase the font size */
+  color:#2980b9; /* Darker, richer blue text */
+  margin-bottom: 40px;
+  font-weight: bold; /* Emphasize the title */
+}
+
+.education-content {
+  display: flex;
+  flex-wrap: wrap; /* Make layout flexible on smaller screens */
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  gap: 30px; /* Increase the gap for better spacing */
+}
+
+.education-text {
+  font-size: 18px;
+  line-height: 1.75;
+  color: #3a3a3a; /* Softer dark grey text */
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.education-text p {
+  margin-bottom: 25px; /* Increase the margin between paragraphs */
+}
+
+.education-text strong {
+  color: #2980b9; /* Keep the ALSA text highlight */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+.education-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.education-image img {
+  width: 100%;
+  height: 90vh; /* Image takes 90% of the viewport height */
+  object-fit: cover; /* Ensure the image covers the container without stretching */
+  border-radius: 12px; /* Smoother, larger rounded corners */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.education-image img:hover {
+  transform: scale(1.05); /* Slight scaling on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .education-content {
+    flex-direction: column; /* Stack the content vertically on small screens */
+  }
+
+  .education-image img {
+    height: auto; /* Allow the image to adjust its height */
+    max-height: 400px; /* Limit the image height on small screens */
+  }
+}

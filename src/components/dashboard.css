@@ -1,0 +1,125 @@
+/* General Dashboard Styles */
+.dashboard {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  color: #2980b9;
+}
+
+.dashboard-header p {
+  font-size: 1rem;
+  color: #4b4b4b;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e74c3c;
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th {
+  background-color: #2980b9;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px;
+  text-align: left;
+}
+
+.user-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  color: #4b4b4b;
+}
+
+.user-table tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+/* Action Buttons */
+.action-btn {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn.call {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.action-btn.call:hover {
+  background-color: #219150;
+}
+
+.action-btn.email {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.action-btn.email:hover {
+  background-color: #2175a8;
+}
+
+.action-btn.delete {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.action-btn.delete:hover {
+  background-color: #c0392b;
+}
+
+/* Checkbox Styles */
+.user-table input[type='checkbox'] {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header h1 {
+    font-size: 2rem;
+  }
+
+  .dashboard-header p {
+    font-size: 0.9rem;
+  }
+
+  .action-btn {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}

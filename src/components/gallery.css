@@ -1,0 +1,44 @@
+.gallery-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5dc; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+.gallery-page-title {
+    font-size: 2.5rem;
+    color: #2980b9;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.indonor-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center align gallery items */
+    gap: 15px; /* Space between images */
+    max-width: 1200px; /* Limit max width */
+    width: 100%; /* Full width for responsive design */
+}
+
+.indonor-gallery img {
+    width: calc(33% - 10px); /* 3 images per row with spacing */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .indonor-gallery img {
+        width: calc(50% - 10px); /* 2 images per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .indonor-gallery img {
+        width: 100%; /* 1 image per row on very small screens */
+    }
+}

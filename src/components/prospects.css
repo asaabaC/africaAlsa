@@ -1,0 +1,56 @@
+.future-prospects-container {
+  padding: 20px;
+  background-color: #f5f5dc;
+  color: #333; /* Dark text for readability */
+}
+
+.title {
+  font-size: 36px;
+  color: #2980b9; /* Dark green for title */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.text-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.text-section h2 {
+  font-size: 24px;
+  color: #2980b9; /* Dark green for headings */
+  margin-top: 15px;
+}
+
+.text-section p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.image-section {
+  flex: 1;
+}
+
+.future-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .text-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

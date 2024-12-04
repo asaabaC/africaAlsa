@@ -1,0 +1,85 @@
+.youth-container {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;; /* Light background */
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto; /* Center the content on the page */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.youth-title {
+    text-align: center;
+    font-size: 32px;
+    color: #2980b9; /* Dark blue text */
+    margin-bottom: 30px;
+}
+
+.youth-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items */
+    gap: 20px;
+}
+
+.youth-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333; /* Dark text color */
+    flex: 1; /* Allow text to take up more space */
+    max-width: 600px; /* Set a max width for better readability */
+}
+
+.youth-text p {
+    margin-bottom: 20px;
+}
+
+.youth-text strong {
+    color: #2980b9; /* Highlight the ALSA text */
+}
+
+.youth-image {
+    flex: 1;
+    width: 100%; /* Ensure full width */
+}
+
+.youth-image img {
+    width: 100%; /* Make the image responsive */
+    height: 90vh; /* Set the height to 90% of the viewport height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for the image */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .youth-content {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+
+    .youth-title {
+        font-size: 28px; /* Slightly smaller title */
+    }
+
+    .youth-text {
+        font-size: 16px; /* Slightly smaller text */
+    }
+
+    .youth-image img {
+        height: 60vh; /* Reduce image height on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .youth-title {
+        font-size: 24px; /* Further reduce title size */
+    }
+
+    .youth-text {
+        font-size: 14px; /* Further reduce text size */
+    }
+
+    .youth-image img {
+        height: 50vh; /* Further reduce image height on very small screens */
+    }
+}

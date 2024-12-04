@@ -1,0 +1,148 @@
+/* General Styling */
+.header {
+  background-color:  turquoise;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:  turquoise; /* Background color */
+  padding: 2px 5px;
+  flex-wrap: wrap; /* Allow the navbar items to wrap when space is limited */
+}
+
+.header-logo {
+  height: 90px; /* Increase height for better visibility */
+  width: auto; /* Ensure the logo maintains its aspect ratio */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 35px;
+}
+
+.nav-link:hover {
+  color:#2980b9;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+.dropdown-menu {
+  display: none; /* Hide by default */
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 4px;
+  list-style: none;
+  z-index: 1000;
+}
+
+/* Show the full dropdown menu on hover */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Ensures all items in the dropdown are shown */
+.dropdown-menu .dropdown-item {
+  display: block;
+  padding: 5px 0;
+}
+
+/* Donate button styling */
+.donate-button {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.donate-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    display: none; /* Hide the navbar links by default */
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-donate {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar.open .navbar-links {
+    display: flex; /* Show the navbar links when the "open" class is added */
+  }
+
+  .navbar-toggler {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+  }
+
+ 
+  
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block; /* Show only on smaller screens */
+    }
+  }
+  
+
+  .dropdown-menu {
+    position: static; /* Make dropdown menus show below their parent items on mobile */
+    box-shadow: none;
+  }
+}

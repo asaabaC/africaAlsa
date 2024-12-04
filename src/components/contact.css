@@ -1,0 +1,47 @@
+.contact-container {
+  background-color: #f5f5dc; /* Soft cream background */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.contact-title {
+  font-size: 36px;
+  color: #2980b9;  /* Dark green title */
+  margin-bottom: 10px;
+}
+
+.contact-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between icons */
+}
+
+.icon {
+  font-size: 50px;
+  color: #666; /* Default icon color */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Enlarge on hover */
+}
+
+.facebook-icon {
+  color: #3b5998; /* Facebook color */
+}
+
+.youtube-icon {
+  color: #FF0000; /* YouTube color */
+}
+
+.whatsapp-icon {
+  color: #25D366; /* WhatsApp color */
+}

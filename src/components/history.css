@@ -1,0 +1,112 @@
+.history-page {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 400px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(6px); /* Applies blur effect */
+  opacity: 0.8; /* Slightly reduces image opacity */
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1; /* Ensures text appears above the image */
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent black background */
+  border-radius: 8px; /* Optional: for rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: for a shadow effect */
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.hero-text p {
+  font-size: 25px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Section Styles */
+.section {
+  display: flex;
+  align-items: center;
+  margin: 20px auto; /* Reduced vertical margin */
+  max-width: 900px;
+  gap: 15px; /* Reduced gap between image and text */
+}
+
+.section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.section-image {
+  flex: 1;
+  border-radius: 12px;
+  width: 100%;
+  height: 250px; /* Slightly smaller height */
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Softer shadow */
+}
+
+.section-text {
+  flex: 1;
+}
+
+.section-text h2 {
+  color: #2980b9;
+  font-size: 24px; /* Reduced font size */
+  margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+.section-text p {
+  color: #4b4b4b;
+  font-size: 16px; /* Reduced font size */
+  line-height: 1.6; /* Slightly tighter line height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    margin: 15px auto; /* Further reduced margin for mobile */
+  }
+
+  .section-image {
+    height: 180px; /* Smaller height for mobile */
+  }
+
+  .section-text h2 {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .section-text p {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+}

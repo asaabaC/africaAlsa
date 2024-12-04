@@ -1,0 +1,74 @@
+.elderly-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5dc;
+}
+
+.elderly-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2980b9;
+    text-align: center;
+}
+
+.elderly-content {
+    display: flex;
+    flex-direction: row; /* Row layout for larger screens */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.elderly-text {
+    width: 50%; /* Default width for larger screens */
+    padding-right: 20px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.elderly-image {
+    width: 50%; /* Default width for larger screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elderly-image img {
+    max-height: 90%; /* Ensures image height is responsive */
+    max-width: 100%; /* Ensures it doesn't exceed container width */
+    object-fit: cover; /* Ensure the image covers its container without distortion */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .elderly-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align for better aesthetics */
+    }
+
+    .elderly-text {
+        width: 100%; /* Full width for text on smaller screens */
+        padding-right: 0; /* Remove padding for better spacing */
+        text-align: center; /* Center align text */
+    }
+
+    .elderly-image {
+        width: 100%; /* Full width for image on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .elderly-title {
+        font-size: 2rem; /* Smaller title for very small screens */
+    }
+
+    .elderly-text {
+        font-size: 1rem; /* Smaller text size for better readability */
+    }
+}

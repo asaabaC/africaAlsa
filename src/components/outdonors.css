@@ -1,0 +1,79 @@
+/* outdonor.css */
+.outdonar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ background-color:#f5f5dc;
+  flex-direction: column;
+  padding-top: 20px; /* Reduced padding at the top */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.outdonar-container h1 {
+  margin-top: 0; /* Remove extra space above the title */
+  margin-bottom: 10px; /* Reduce space below the title */
+  font-size: 24px;
+  text-align: center;
+  color: #2980b9;
+}
+
+.notice {
+  margin-top: 0px; /* Reduce space between the title and notice text */
+  margin-bottom: 20px; /* Adjust to control spacing before the form */
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.outdonar-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.outdonar-form div {
+  margin-bottom: 15px;
+}
+
+.outdonar-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.outdonar-form input, .outdonar-form select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.outdonar-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.outdonar-form button:hover {
+  background-color: #45a049;
+}
+
+.feedback-message {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
